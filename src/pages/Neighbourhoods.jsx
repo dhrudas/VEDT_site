@@ -24,63 +24,63 @@ const details = [
 
 export default function Neighbourhoods() {
   return (
-    <div>
-      <PageStrip
-        label="VEDT Amsterdam · Where to Stay"
-        title="Amsterdam's"
-        titleEm="Neighbourhoods"
-        subtitle="Each quarter of the city tells a different family story."
-      />
-
-      <section className="py-16 md:py-20 px-4 md:px-12 bg-cream">
-        <div className="max-w-7xl mx-auto">
-          <SectionHeader
-            label="Where to Stay"
+      <div>
+        <PageStrip
+            label="VEDT Amsterdam · Where to Stay"
             title="Amsterdam's"
-            titleEm="family neighbourhoods"
-            description="The city's four distinct quarters each offer a different family experience."
-          />
+            titleEm="Neighbourhoods"
+            subtitle="Each quarter of the city tells a different family story."
+        />
 
-          {/* Image Cards */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
-            {neighbourhoods.map((n, i) => (
-              <RevealCard key={n.name} delay={i * 0.1}>
-                <div className="group relative aspect-[3/4] rounded-md overflow-hidden cursor-pointer">
-                  <img src={n.img} alt={n.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.08]" loading="lazy" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 pt-16 bg-gradient-to-t from-navy/92 to-transparent translate-y-12 group-hover:translate-y-0 transition-transform duration-400">
-                    <h3 className="font-display text-xl text-white mb-1">{n.name}</h3>
-                    <p className="text-[0.8rem] text-white/72 leading-relaxed">{n.note}</p>
-                    <span className="inline-block mt-2 text-[0.6rem] font-medium tracking-wider uppercase bg-gold/30 text-gold-light px-2.5 py-0.5 rounded-full">{n.tag}</span>
-                  </div>
-                </div>
-              </RevealCard>
-            ))}
-          </div>
+        <section className="py-16 md:py-20 px-4 md:px-12 bg-cream">
+          <div className="max-w-7xl mx-auto">
+            <SectionHeader
+                label="Where to Stay"
+                title="Amsterdam's"
+                titleEm="family neighbourhoods"
+                description="The city's four distinct quarters each offer a different family experience."
+            />
 
-          {/* Detail Cards */}
-          <div className="grid md:grid-cols-2 gap-6 mt-12">
-            {details.map((d, i) => (
-              <RevealCard key={d.name} delay={i * 0.08}>
-                <div className="bg-white rounded-lg p-6 border border-navy/8">
-                  <h3 className="font-display text-xl text-navy mb-1">{d.name}</h3>
-                  <div className="text-[0.68rem] font-medium tracking-wider uppercase text-gold mb-3">{d.tagline}</div>
-                  <p className="text-sm leading-relaxed text-muted-foreground mb-4">{d.text}</p>
-                  <ul className="space-y-1.5">
-                    {d.highlights.map(h => (
-                      <li key={h} className="flex gap-2 text-sm text-foreground/80">
-                        <span className="text-gold flex-shrink-0">→</span> {h}
-                      </li>
-                    ))}
-                  </ul>
-                  <span className="inline-block mt-4 text-[0.62rem] font-medium tracking-wider uppercase px-3 py-1 rounded-full border border-gold/35 text-gold">
+            {/* Image Cards */}
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
+              {neighbourhoods.map((n, i) => (
+                  <RevealCard key={n.name} delay={i * 0.1}>
+                    <div className="group relative aspect-[3/4] rounded-md overflow-hidden cursor-pointer">
+                      <img src={n.img} alt={n.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.08]" loading="lazy" />
+                      <div className="absolute bottom-0 left-0 right-0 p-4 pt-16 bg-gradient-to-t from-navy/92 to-transparent translate-y-12 group-hover:translate-y-0 transition-transform duration-400">
+                        <h3 className="font-display text-xl text-white mb-1">{n.name}</h3>
+                        <p className="text-[0.8rem] text-white/72 leading-relaxed">{n.note}</p>
+                        <span className="inline-block mt-2 text-[0.6rem] font-medium tracking-wider uppercase bg-gold/30 text-gold-light px-2.5 py-0.5 rounded-full">{n.tag}</span>
+                      </div>
+                    </div>
+                  </RevealCard>
+              ))}
+            </div>
+
+            {/* Detail Cards */}
+            <div className="grid md:grid-cols-2 gap-6 mt-12">
+              {details.map((d, i) => (
+                  <RevealCard key={d.name} delay={i * 0.08}>
+                    <div className="bg-white rounded-lg p-6 border border-navy/8">
+                      <h3 className="font-display text-xl text-navy mb-1">{d.name}</h3>
+                      <div className="text-[0.68rem] font-medium tracking-wider uppercase text-gold mb-3">{d.tagline}</div>
+                      <p className="text-sm leading-relaxed text-muted-foreground mb-4">{d.text}</p>
+                      <ul className="space-y-1.5">
+                        {d.highlights.map(h => (
+                            <li key={h} className="flex gap-2 text-sm text-foreground/80">
+                              <span className="text-gold flex-shrink-0">→</span> {h}
+                            </li>
+                        ))}
+                      </ul>
+                      <span className="inline-block mt-4 text-[0.62rem] font-medium tracking-wider uppercase px-3 py-1 rounded-full border border-gold/35 text-gold">
                     {d.tier}
                   </span>
-                </div>
-              </RevealCard>
-            ))}
+                    </div>
+                  </RevealCard>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
   );
 }

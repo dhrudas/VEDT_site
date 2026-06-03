@@ -7,14 +7,14 @@ import AmsterdamMap from '../components/home/AmsterdamMap';
 import EditorialStrip from '../components/home/EditorialStrip';
 
 export default function Home() {
-  return (
-    <div>
-      <HeroSection />
-      <WhySection />
-      <FactsSection />
-      <DifferentSection />
-      <AmsterdamMap />
-      <EditorialStrip />
-    </div>
-  );
+    return (
+        <div>
+            <HeroSection />
+            <WhySection />
+            <FactsSection />
+            <DifferentSection />
+            <AmsterdamMap />
+            <EditorialStrip />
+        </div>
+    );
 }

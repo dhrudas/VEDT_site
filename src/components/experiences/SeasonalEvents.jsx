@@ -13,25 +13,25 @@ const events = [
 
 export default function SeasonalEvents() {
   return (
-    <section className="py-16 md:py-20 px-4 md:px-12 bg-soft">
-      <div className="max-w-7xl mx-auto">
-        <SectionHeader label="Throughout the Year" title="Amsterdam's" titleEm="family calendar" />
+      <section className="py-16 md:py-20 px-4 md:px-12 bg-soft">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeader label="Throughout the Year" title="Amsterdam's" titleEm="family calendar" />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
-          {events.map((evt, i) => (
-            <RevealCard key={evt.name} delay={i * 0.08}>
-              <div className={`bg-white p-6 rounded-lg border hover:-translate-y-1 hover:shadow-lg transition-all ${evt.special ? 'border-lux-c/30 bg-gradient-to-br from-[#2a1066]/[0.04] to-white' : 'border-navy/8'}`}>
-                <div className="text-[0.62rem] font-medium tracking-[0.2em] uppercase text-gold mb-1.5">{evt.month}</div>
-                <h3 className="font-display text-xl text-navy mb-2">{evt.name}</h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">{evt.desc}</p>
-                <span className={`inline-block mt-3 text-[0.6rem] font-semibold tracking-wider uppercase px-2.5 py-0.5 rounded-full ${evt.tagColor}`}>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+            {events.map((evt, i) => (
+                <RevealCard key={evt.name} delay={i * 0.08}>
+                  <div className={`bg-white p-6 rounded-lg border hover:-translate-y-1 hover:shadow-lg transition-all ${evt.special ? 'border-lux-c/30 bg-gradient-to-br from-[#2a1066]/[0.04] to-white' : 'border-navy/8'}`}>
+                    <div className="text-[0.62rem] font-medium tracking-[0.2em] uppercase text-gold mb-1.5">{evt.month}</div>
+                    <h3 className="font-display text-xl text-navy mb-2">{evt.name}</h3>
+                    <p className="text-sm leading-relaxed text-muted-foreground">{evt.desc}</p>
+                    <span className={`inline-block mt-3 text-[0.6rem] font-semibold tracking-wider uppercase px-2.5 py-0.5 rounded-full ${evt.tagColor}`}>
                   {evt.tag}
                 </span>
-              </div>
-            </RevealCard>
-          ))}
+                  </div>
+                </RevealCard>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
   );
 }
