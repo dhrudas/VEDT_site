@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const slides = [
   {
-    img: 'https://images.unsplash.com/photo-1548041421-f668e49c6a3b?w=1800&q=85&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1611440052868-58b551b07e2c?w=1800&q=85&auto=format&fit=crop',
     label: 'The Canals',
     headline: ['Pedal,', 'Paddle'],
     sub: '& Play',
