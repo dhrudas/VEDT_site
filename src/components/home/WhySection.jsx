@@ -5,7 +5,7 @@ import SectionHeader from '../shared/SectionHeader';
 
 const panels = [
   {
-    img: 'https://images.unsplash.com/photo-1548041421-f668e49c6a3b?w=1000&q=80&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=1000&q=80&auto=format&fit=crop',
     label: 'Canal Life',
     desc: 'UNESCO World Heritage waterways. Hire a boat, join a cruise, or simply walk every bridge.',
   },
