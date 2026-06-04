@@ -18,7 +18,7 @@ const strips = [
     linkLabel: 'Plan Your Stay',
   },
   {
-    img: 'https://images.unsplash.com/photo-1548041421-f668e49c6a3b?w=900&q=80&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1542798323-4fce71367fc3?w=900&q=80&auto=format&fit=crop',
     label: 'Private Cruises',
     copy: 'UNESCO waterways explored at your own pace, on your own vessel.',
     link: '/packages',
