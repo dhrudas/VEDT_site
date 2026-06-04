@@ -11,7 +11,7 @@ const cards = [
     tag: 'Cycling',
   },
   {
-    img: 'https://images.unsplash.com/photo-1548041421-f668e49c6a3b?w=600&q=75&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1652879490258-736dd06ec0dd?w=600&q=75&auto=format&fit=crop',
     title: 'Human Scale',
     text: "Rome requires 25,000 steps a day. Amsterdam's entire historic centre fits inside a 3km half-moon. Little legs keep up.",
     vs: "vs Rome — you'll carry someone by 2pm",
