@@ -44,7 +44,7 @@ const tiers = [
     accentColor: 'text-disc-c',
     badgeBg: 'bg-disc-c',
     ctaStyle: 'bg-disc-c text-white hover:bg-disc-c/85',
-    img: 'https://images.unsplash.com/photo-1548041421-f668e49c6a3b?w=900&q=85&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1529943247435-a5974e63d6e4?w=900&q=85&auto=format&fit=crop',
     includes: [
       { text: '3-star family apartment in the Jordaan or De Pijp', highlight: false },
       { text: 'iAmsterdam City Card 72h (€105/adult — 70+ attractions)', highlight: false },
