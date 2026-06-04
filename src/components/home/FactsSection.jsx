@@ -5,7 +5,7 @@ import SectionHeader from '../shared/SectionHeader';
 const facts = [
   { number: 900000, display: '900K', suffix: '', label: 'Bicycles', desc: 'More bikes than people. Around 15,000 are fished from the canals every single year.' },
   { number: 1281, display: '1,281', suffix: '', label: 'Bridges', desc: 'Amsterdam beats Venice. Challenge your children to cross as many as possible.' },
-  { number: 15, display: '7M+', suffix: '', label: 'Tulips Yearly', desc: 'Keukenhof displays over 7 million blooms across 32 hectares — the world\'s largest flower garden.' },
+  { number: 7000000, display: '7M+', suffix: '', label: 'Tulips Yearly', desc: 'Keukenhof displays over 7 million blooms across 32 hectares — the world\'s largest flower garden.' },
   { number: 1550, display: '1,550', suffix: '', label: 'Wonky Houses', desc: 'Canal houses are deliberately tilted forward so furniture can be hoisted through windows.' },
   { number: 650, display: '650M kg', suffix: '', label: 'Cheese / Year', desc: 'The world\'s largest cheese exporter. Gouda so fresh it changes your opinions forever.' },
   { number: 165, display: '165', suffix: '', label: 'Canals', desc: 'The canal ring is a UNESCO World Heritage Site — the world\'s original planned city.' },
